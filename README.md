@@ -1,7 +1,7 @@
 Portfolio - Ankit Singh 🚀
 Welcome to my personal portfolio! This is where I showcase my journey as an AI/ML Developer, Web Developer, and Tech Enthusiast based in Vadodara, Gujarat, originally from Prayagraj, Uttar Pradesh, India. Guided by my motto, "Always know something about everything," this portfolio highlights my skills, projects, certifications, and passion for creating innovative tech solutions.
 
-🔗 Live Demo: https://zoldyck-3k.github.io/Portfolio/
+🔗 Live Demo: https://ankitx0.github.io/Portfolio/
 
 🌟 About Me
 Hi, I’m Ankit Singh, a B.Tech student in Computer Science (AI/ML) at Parul University. With a strong foundation in Python, Java, C, HTML/CSS, JavaScript, MySQL, and Prompt Engineering, I specialize in building AI-driven applications and full-stack web projects. I’m passionate about solving real-world problems through technology, whether it’s developing smart surveillance systems or creating user-friendly web apps. I’m also an active participant in hackathons, a freelance developer, and a tech fest organizer at my university.
