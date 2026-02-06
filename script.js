@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let $ = (e) => document.querySelector(e);
 
     // ==================== CHATBOT FEATURE ====================
-    const API_KEY = "AIzaSyCmgWmaefuHAUx-NcFsHDHzXD8PLqql1bg";
+    const API_KEY = "AIzaSyDXtzPgcDdJDb3REpUb629vIZzXNyU77TQ";
     const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent";
 
     // Resume data for context
@@ -223,4 +223,5 @@ BEHAVIOR RULES:
 
 
 });
+
 
