@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let $ = (e) => document.querySelector(e);
 
     // ==================== CHATBOT FEATURE ====================
-    const API_KEY = "AIzaSyDXtzPgcDdJDb3REpUb629vIZzXNyU77TQ";
+    const API_KEY = "AQ.Ab8RN6LY2k6Hfd7kmyDmJwNSKgT4xU_-3bOyquzKIljvbbv3xg";
     const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent";
 
     // Resume data for context
