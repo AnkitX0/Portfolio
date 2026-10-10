@@ -1,573 +1,528 @@
 <!DOCTYPE html>
-<html lang=en>
+<html lang="en" data-theme="stark">
 <head>
-<meta charset=UTF-8>
-<meta name=viewport content="width=device-width, initial-scale=1.0">
-<meta name=description content="Portfolio of Ankit Singh - AI/ML Developer, Web Developer, and Tech Enthusiast based in Vadodara, Gujarat, originally from Prayagraj, Uttar Pradesh, India. Explore my projects, skills in Python, JAVA, C, web development, and machine learning from Parul University.">
-<meta name=keywords content="Ankit Singh, AI/ML Developer, Web Developer, Portfolio, Projects, Certifications, Machine Learning, Webdevloper, Python, JAVA, C, Parul University, AIML, Tech Enthusiast, Vadodara, Gujarat, Prayagraj, Uttar Pradesh, India">
-<meta name=author content="Ankit Singh">
-<meta name=robots content="index, follow">
-<meta name=googlebot content="index, follow">
-<meta name=language content=English>
-<meta name=revisit-after content="7 days">
-<meta name=geo.region content=IN-GJ />
-<meta name=geo.placename content="Vadodara, Gujarat, India & Prayagraj, Uttar Pradesh, India" />
-<meta name=geo.position content="22.3072;73.1812, 25.4683;81.8546" />
-<meta name=ICBM content="22.3072, 73.1812, 25.4683, 81.8546" />
-<meta property=og:title content="Ankit Singh | AI/ML Developer & Web Developer Portfolio">
-<meta property=og:description content="Discover the portfolio of Ankit Singh, an AI/ML Developer and Web Developer passionate about innovative tech solutions. Based in Vadodara, Gujarat, and originally from Prayagraj, Uttar Pradesh, India. View projects and certifications.">
-<meta property=og:image content=https://ankitX0.github.io/Portfolio/images/ankit-singh-profile.jpg>
-<meta property=og:image:alt content="Profile picture of Ankit Singh, AI/ML and Web Developer">
-<meta property=og:url content="https://github.com/AnkitX0?tab=repositories">
-<meta property=og:type content=website>
-<meta property=og:locale content=en_US>
-<meta property=og:site_name content="Ankit Singh Portfolio">
-<link rel=canonical href=https://ankitX0.github.io/Portfolio/>
-<script type=application/ld+json>
-        {
-            "@context": "https://schema.org",
-            "@type": "Person",
-            "name": "Ankit Singh",
-            "url": "https://ankitX0.github.io/Portfolio/", 
-            "sameAs": [
-                "https://www.linkedin.com/in/ankit3k/",
-                "https://leetcode.com/u/ankit_3k/",
-                "https://github.com/ankitX0",
-                "https://instagram.com/ankit_.3k"
-            ],
-            "jobTitle": "AI/ML Developer, Web Developer",
-            "description": "Ankit Singh is an AI/ML Developer and Web Developer with expertise in Python, JAVA, C, and web development. A tech enthusiast from Parul University, currently based in Vadodara, Gujarat, India, originally from Prayagraj, Uttar Pradesh, India.",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Vadodara, Gujarat & Prayagraj, Uttar Pradesh",
-                "addressCountry": "IN"
-            },
-            "email": "mailto:ankitsingh10a@gmail.com",
-            "worksFor": {
-                "@type": "Organization",
-                "name": "Freelance"
-            },
-            "alumniOf": {
-                "@type": "EducationalOrganization",
-                "name": "Parul University"
-            },
-            "image": "https://ankitX0.github.io/Portfolio/images/ankit-singh-profile.jpg" <!-- Added for SEO -->
-        }
-        </script>
-<link rel=icon type=image/x-icon href=favicon.ico>
-<link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
-<link rel=preload href=style-min.css as=style>
-<link rel=preload href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css as=style>
-<link rel=preload href=https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js as=script>
-<title>Ankit Singh | AI/ML Developer & Web Developer Portfolio</title>
-<link rel=stylesheet href=style-min.css>
-<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css>
-<svg style=position:absolute;width:0;height:0>
-<defs>
-<linearGradient id=progressGradient x1=0% y1=0% x2=100% y2=100%>
-<stop offset=0% style="stop-color:#007bff;stop-opacity:1"/>
-<stop offset=100% style="stop-color:#00d4ff;stop-opacity:1"/>
-</linearGradient>
-</defs>
-</svg>
-<script src=https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ankit Singh | AI/ML & Systems Engineering Portfolio</title>
+
+  <!-- Prevent flash of wrong theme on initial load -->
+  <script>
+    (function() {
+      try {
+        var saved = localStorage.getItem('portfolio_identity_theme') || 'stark';
+        document.documentElement.setAttribute('data-theme', saved);
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Meta Tags for SEO -->
+  <meta name="description" content="Ankit Singh — AI/ML engineering student obsessed with intelligent systems, computer vision, distributed software, and building extraordinary prototypes from first principles.">
+  <meta name="keywords" content="Ankit Singh, AI/ML Engineer, Systems Engineering, Distributed Systems, HEDS, Vortex, PhishingGuard, Computer Vision, FastAPI, PyTorch, Parul University, Portfolio">
+  <meta name="author" content="Ankit Singh">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ankitx0.github.io/Portfolio/">
+  <meta property="og:title" content="Ankit Singh | AI/ML & Systems Engineering Portfolio">
+  <meta property="og:description" content="I want to build the things I once thought were impossible. Explore distributed systems, computer vision, and applied AI.">
+  <meta property="og:image" content="images/jprofile.jpeg">
+  <meta property="og:site_name" content="Ankit Singh Portfolio">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://ankitx0.github.io/Portfolio/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ankit Singh",
+    "url": "https://ankitx0.github.io/Portfolio/",
+    "sameAs": [
+      "https://github.com/AnkitX0",
+      "https://www.linkedin.com/in/ankit3k/",
+      "https://leetcode.com/u/ankit_3k/"
+    ],
+    "jobTitle": "AI/ML Engineer & Systems Developer",
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Parul University",
+      "location": "Vadodara, Gujarat, India"
+    },
+    "knowsAbout": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Distributed Systems",
+      "Computer Vision",
+      "Python",
+      "FastAPI",
+      "Java",
+      "PostgreSQL"
+    ],
+    "email": "mailto:ankitsingh10a@gmail.com",
+    "image": "images/jprofile.jpeg"
+  }
+  </script>
+
+  <!-- Preconnect & Stylesheets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-<div class="menu-toggle animated-btn" role=button aria-label="Toggle navigation menu" tabindex=0>
-<div></div>
-<div></div>
-<div></div>
-</div>
-<aside class=sidebar role=navigation>
-<div class=profile>
-<img src=images/ankit-singh-profile.jpg alt="Profile picture of Ankit Singh, AI/ML and Web Developer" loading=lazy>
-<h2>Ankit Singh</h2>
-<div class=social-links>
-<a href=https://github.com/ankitX0 target=_blank rel="noopener noreferrer" aria-label="Visit Ankit Singh's GitHub profile"><i class="fab fa-github"></i></a>
-<a href=https://www.instagram.com/ankit_.3k/ target=_blank rel="noopener noreferrer" aria-label="Visit Ankit Singh's Instagram profile"><i class="fab fa-instagram"></i></a>
-<a href=https://www.linkedin.com/in/ankit_3k/ target=_blank rel="noopener noreferrer" aria-label="Visit Ankit Singh's LinkedIn profile"><i class="fab fa-linkedin"></i></a>
-<a href=mailto:ankitsingh10a@gmail.com aria-label="Email Ankit Singh"><i class="fas fa-envelope"></i></a>
-</div>
-</div>
-<nav aria-label="Main navigation">
-<ul>
-<li><a href=#hero class=active aria-current=page><i class="fas fa-home" aria-hidden=true></i> Home</a></li>
-<li><a href=#about><i class="fas fa-user" aria-hidden=true></i> About</a></li>
-<li><a href=#skills><i class="fas fa-lightbulb" aria-hidden=true></i> Skills</a></li>
-<li><a href=#certifications><i class="fas fa-certificate" aria-hidden=true></i> Certifications</a></li>
-<li><a href=#projects><i class="fas fa-project-diagram" aria-hidden=true></i> Projects</a></li>
-<li><a href=#resume><i class="fas fa-file-alt" aria-hidden=true></i> Resume</a></li>
-<li><a href=#contact><i class="fas fa-envelope" aria-hidden=true></i> Contact</a></li>
-</ul>
-</nav>
-<button class=dark-mode-toggle aria-label="Toggle dark mode">
-<i class="fas fa-moon" aria-hidden=true></i> <span>Dark Mode</span>
-</button>
-</aside>
-<main class=main-content>
-<section class=hero id=hero>
-<div class=hero-particles id=particles-js aria-hidden=true></div>
-<div class=hero-container>
-<div class=hero-text>
-<h1>Hi, I'm <span>Ankit Singh</span></h1>
-<p>Web Developer | Designer | Tech Enthusiast</p>
-<div class=hero-links>
-<a href=https://github.com/ankitX0 target=_blank rel="noopener noreferrer" aria-label="Visit Ankit Singh's GitHub profile"><i class="fab fa-github"></i></a>
-<a href=https://www.linkedin.com/in/ankit_3k/ target=_blank rel="noopener noreferrer" aria-label="Visit Ankit Singh's LinkedIn profile"><i class="fab fa-linkedin"></i></a>
-<a href=https://instagram.com/ankit_.3k target=_blank rel="noopener noreferrer" aria-label="Visit Ankit Singh's Instagram profile">
-<i class="fab fa-instagram"></i>
-</a>
-</div>
-</div>
-</div>
-</section>
-<section id=about class=section>
-<div class=container>
-<h2 class="section-title animate-title">About Me</h2>
-<p class="section-description animate-text" style="font-size:18px;color:black;padding:15px;border-radius:8px;box-shadow:0 4px 8px rgba(0,0,0,0.2);text-align:center;line-height:1.6">
-Hey there! 👋 I'm an <strong>20-year-old BTech student</strong> at <strong>Parul University, Vadodara</strong>, passionate about <strong>programming and technology</strong>. I specialize in <span style=color:#f39c12>Java</span>, <span style=color:#e74c3c>Python</span>, <span style=color:#3498db>HTML</span>, and <span style=color:#27ae60>CSS</span>, but my curiosity spans <em>everything tech</em>—from <strong>IoT and AI</strong> to <strong> Cloud Computing</strong>.<br> My motto? <span style=color:#fc0;font-weight:bold>"Always know something about everything."</span>
-<br><br>
-I’ve built projects like a <strong>portfolio website, task manager app, and accounts management tool</strong>, gaining hands-on experience in <strong>front-end and back-end development</strong>. Always eager to learn, I actively participate in <strong>hackathons and tech meetups</strong>. Let’s <span style=color:#00d9ff;font-weight:bold>connect and build something amazing! 🚀</span>
-</p>
-<div class=about-content>
-<div class="about-image tilt-container">
-<img src=images/profile.jpg alt="Ankit Singh, AI/ML and Web Developer, in a professional setting" class=tilt-image loading=lazy>
-<div class=image-overlay aria-hidden=true></div>
-</div>
-<div class=about-details>
-<h3 class=animate-text>AI/ML & Front-End Developer</h3>
-<p class="about-intro animate-text"><em>Active in hackathons, AI/ML projects, and full-stack development.</em></p>
-<div class="about-info animate-cards">
-<div class="info-left card">
-<p><i class="fas fa-code" aria-hidden=true></i> <strong>Role:</strong> AI/ML & Web Developer</p>
-<p><i class="fab fa-github" aria-hidden=true></i> <strong>GitHub:</strong> <a href=https://github.com/ankitX0 target=_blank rel="noopener noreferrer">ankitX0</a></p>
-<p><i class="fab fa-linkedin" aria-hidden=true></i> <strong>LinkedIn:</strong> <a href=https://www.linkedin.com/in/ankit_3k target=_blank rel="noopener noreferrer">ankit_3k</a></p>
-<p><i class="fas fa-map-marker-alt" aria-hidden=true></i> <strong>Location:</strong> Vadodara, India</p>
-</div>
-<div class="info-right card">
-<p><i class="fas fa-briefcase" aria-hidden=true></i> <strong>Experience:</strong> 2+ years</p>
-<p><i class="fas fa-graduation-cap" aria-hidden=true></i> <strong>Degree:</strong> BTech in CSE (AI/ML)</p>
-<p><i class="fas fa-envelope" aria-hidden=true></i> <strong>Email:</strong> <a href=mailto:ankitsingh10a@gmail.com>ankitsingh10a@gmail.com</a></p>
-<p><i class="fas fa-user-check" aria-hidden=true></i> <strong>Freelance:</strong> Open</p>
-</div>
-</div>
-<p class="about-description animate-text">Experienced in Java, Python, HTML, CSS, and JavaScript. Worked on AI projects like <strong>City Watch</strong> and <strong>Expense Tracker</strong>.</p>
-</div>
-</div>
-</div>
-</section>
-<section id=skills class=section>
-<div class=stats-grid>
-<div class=stat-item>
-<i class="fas fa-user" aria-hidden=true></i>
-<h2>12,345</h2>
-<p>Website Visitors</p>
-</div>
-<div class=stat-item>
-<i class="fas fa-code" aria-hidden=true></i>
-<h2>20+</h2>
-<p>Projects Completed</p>
-</div>
-<div class=stat-item>
-<i class="fas fa-laptop-code" aria-hidden=true></i>
-<h2>50+</h2>
-<p>Coding Challenges</p>
-</div>
-<div class=stat-item>
-<i class="fas fa-award" aria-hidden=true></i>
-<h2>8</h2>
-<p>Certifications</p>
-</div>
-</div>
-<h2 class="section-title animate-title">Skills</h2>
-<div class=skills-grid>
-<div class=skill-item data-skill=html-css>
-<div class=skill-icon>
-<i class="fab fa-html5" aria-hidden=true></i>
-<i class="fab fa-css3-alt" aria-hidden=true></i>
-</div>
-<div class=skill-info>
-<h4>HTML & CSS</h4>
-<p>Building responsive and modern web interfaces.</p>
-</div>
-</div>
-<div class=skill-item data-skill=java>
-<div class=skill-icon>
-<i class="fab fa-java" aria-hidden=true></i>
-</div>
-<div class=skill-info>
-<h4>Java</h4>
-<p>Object-oriented programming and backend development.</p>
-</div>
-</div>
-<div class=skill-item data-skill=c>
-<div class=skill-icon>
-<img src=https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png alt="C programming language logo" width=32 loading=lazy>
-</div>
-<div class=skill-info>
-<h4>C</h4>
-<p>Foundational programming and system-level concepts.</p>
-</div>
-</div>
-<div class=skill-item data-skill=python>
-<div class=skill-icon>
-<i class="fab fa-python" aria-hidden=true></i>
-</div>
-<div class=skill-info>
-<h4>Python</h4>
-<p>Data analysis, scripting, and AI/ML applications.</p>
-</div>
-</div>
-<div class=skill-item data-skill=prompt-engineering>
-<div class=skill-icon>
-<i class="fas fa-brain" aria-hidden=true></i>
-</div>
-<div class=skill-info>
-<h4>Prompt Engineering</h4>
-<p>Crafting effective inputs for AI models.</p>
-</div>
-</div>
-<div class=skill-item data-skill=mysql>
-<div class=skill-icon>
-<i class="fas fa-database" aria-hidden=true></i>
-</div>
-<div class=skill-info>
-<h4>MySQL</h4>
-<p>Database design and management.</p>
-</div>
-</div>
-<div class=skill-item data-skill=javascript>
-<div class=skill-icon>
-<i class="fab fa-js" aria-hidden=true></i>
-</div>
-<div class=skill-info>
-<h4>JavaScript</h4>
-<p>Dynamic web functionality and interactivity.</p>
-</div>
-</div>
-<div class=skill-item data-skill=git>
-<div class=skill-icon>
-<i class="fab fa-git-alt" aria-hidden=true></i>
-</div>
-<div class=skill-info>
-<h4>Git</h4>
-<p>Version control and collaborative development.</p>
-</div>
-</div>
-<div class=skill-item data-skill=aiml>
-<div class=skill-icon>
-<i class="fas fa-robot" aria-hidden=true></i>
-</div>
-<div class=skill-info>
-<h4>AI/ML Basics</h4>
-<p>Foundations of artificial intelligence and machine learning.</p>
-</div>
-</div>
-<div class=skill-item data-skill=data-structures>
-<div class=skill-icon>
-<i class="fas fa-sitemap" aria-hidden=true></i>
-</div>
-<div class=skill-info>
-<h4>Data Structures</h4>
-<p>Efficient problem-solving and algorithm design.</p>
-</div>
-</div>
-</div>
-</section>
-<section id=certifications class=section>
-<div class=container>
-<h2 class="section-title animate-title">Certifications</h2>
-<div class=certifications-grid>
-<div class="cert-item flip-card">
-<div class=flip-card-inner>
-<div class=flip-card-front>
-<h3>Python Certification</h3>
-<p>Baghel Computer Center</p>
-<i class="fas fa-certificate cert-icon" aria-hidden=true></i>
-</div>
-<div class=flip-card-back>
-<h3>Python Certification</h3>
-<p>Mastered Python fundamentals and data analysis.</p>
-<span class=date>June 2022 - Aug 2022</span>
-<a href="https://drive.google.com/file/d/1xdsM1nGG-9C2OdMuK-KQnvTyqsoitkTd/view?usp=drive_link" target=_blank rel="noopener noreferrer" class=btn>View Certificate</a>
-</div>
-</div>
-</div>
-<div class="cert-item flip-card">
-<div class=flip-card-inner>
-<div class=flip-card-front>
-<h3>Java Diploma</h3>
-<p>NexGen Computer Center</p>
-<i class="fab fa-java cert-icon" aria-hidden=true></i>
-</div>
-<div class=flip-card-back>
-<h3>Java Diploma</h3>
-<p>Completed a professional Java training program.</p>
-<span class=date>Nov 2022- Dec 2023</span>
-<a href="https://drive.google.com/file/d/1JLunCq1MWRyU9ttmpwMrMQHKpGC-8DQY/view?usp=drive_link" target=_blank rel="noopener noreferrer" class=btn>View Certificate</a>
-</div>
-</div>
-</div>
-<div class="cert-item flip-card">
-<div class=flip-card-inner>
-<div class=flip-card-front>
-<h3>Workshop in AI</h3>
-<p>AI Innovation Summit</p>
-<i class="fas fa-robot cert-icon" aria-hidden=true></i>
-</div>
-<div class=flip-card-back>
-<h3>Workshop in AI</h3>
-<p>Explored AI applications and real-world use cases.</p>
-<span class=date>May 2023</span>
-<a href="https://drive.google.com/file/d/1tlaSn9IqT16J0r_2DVbP_iB6n0pZBpym/view?usp=drive_link" target=_blank rel="noopener noreferrer" class=btn>View Certificate</a>
-</div>
-</div>
-</div>
-<div class="cert-item flip-card">
-<div class=flip-card-inner>
-<div class=flip-card-front>
-<h3>Software Engineer</h3>
-<p>HackerRank</p>
-<i class="fas fa-code cert-icon" aria-hidden=true></i>
-</div>
-<div class=flip-card-back>
-<h3>Software Engineer</h3>
-<p>Certified in problem-solving & data structures.</p>
-<span class=date>Sept 2024</span>
-<a href="https://drive.google.com/file/d/1gkoUk6QE1hmeon-0GwP7-ToBEtHL6H5M/view?usp=sharing" target=_blank rel="noopener noreferrer" class=btn>View Certificate</a>
-</div>
-</div>
-</div>
-<div class="cert-item flip-card">
-<div class=flip-card-inner>
-<div class=flip-card-front>
-<h3>CDC Global Fun Fest</h3>
-<p>CDC Reading Program</p>
-<i class="fas fa-book cert-icon" aria-hidden=true></i>
-</div>
-<div class=flip-card-back>
-<h3>CDC Global Fun Fest</h3>
-<p>Participated in a global reading and knowledge-sharing event.</p>
-<span class=date>Jan 2025</span>
-<a href="https://drive.google.com/file/d/1arHtFavMGhgZ-J4LHQV6D8e-McOZT7DJ/view?usp=drive_link" target=_blank rel="noopener noreferrer" class=btn>View Details</a>
-</div>
-</div>
-</div>
-<div class="cert-item flip-card">
-<div class=flip-card-inner>
-<div class=flip-card-front>
-<h3>Hackathon Winner</h3>
-<p>TechFest 2024</p>
-<i class="fas fa-trophy cert-icon" aria-hidden=true></i>
-</div>
-<div class=flip-card-back>
-<h3>Hackathon Winner</h3>
-<p>1st place for AI-based solution.</p>
-<span class=date>Nov 2024</span>
-<a href="https://drive.google.com/file/d/1arHtFavMGhgZ-J4LHQV6D8e-McOZT7DJ/view?usp=drive_link" target=_blank rel="noopener noreferrer" class=btn>View Details</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id=projects class=section>
-<div class=container>
-<h2 class=section-title>Projects</h2>
-<div class=underline aria-hidden=true></div>
-<p class=section-description>Key projects showcasing AI/ML and full-stack skills.</p>
-<div class=project-grid>
-<div class=project-item>
-<img src=images/city.webp alt="City Watch project screenshot showing an AI-based surveillance system interface" loading=lazy>
-<h3>City Watch</h3>
-<p>AI-based surveillance system.</p>
-<div class=project-buttons>
-<a href=https://github.com/ankitX0/CityWatch target=_blank rel="noopener noreferrer" class=btn>GitHub</a>
-<a href=https://ankitX0.github.io/CityWatch/ target=_blank rel="noopener noreferrer" class="btn btn-preview"><i class="fas fa-eye" aria-hidden=true></i> Preview</a>
-</div>
-</div>
-<div class=project-item>
-<img src=images/expense.webp alt="Expense Tracker project screenshot showing a full-stack expense management app interface" loading=lazy>
-<h3>Expense Tracker</h3>
-<p>Full-stack expense management app.</p>
-<div class=project-buttons>
-<a href=https://github.com/ankitX0/Expense_Tracker target=_blank rel="noopener noreferrer" class=btn>GitHub</a>
-<a href=https://ankitX0.github.io/Expense_Tracker/ target=_blank rel="noopener noreferrer" class="btn btn-preview"><i class="fas fa-eye" aria-hidden=true></i> Preview</a>
-</div>
-</div>
-<div class=project-item>
-<img src=images/Vehicle_Registration_System.png alt="Vehicle Registration project screenshot showing a vehicle records management interface" loading=lazy>
-<h3>Vehicle Registration</h3>
-<p>Vehicle records management.</p>
-<div class=project-buttons>
-<a href=https://github.com/ankitX0/Java-VehicleRegistration/tree/main/vehicleregistration target=_blank rel="noopener noreferrer" class=btn>GitHub</a>
-<a href=https://ironbyte.netlify.app/javaprojects/vehicleregistration/vehicleregistration target=_blank rel="noopener noreferrer" class="btn btn-preview"><i class="fas fa-eye" aria-hidden=true></i> Preview</a>
-</div>
-</div>
-<div class=project-item>
-<img src=images/Ticket_Booking_System.png alt="Ticket Booking System project screenshot showing a web-based ticket booking interface" loading=lazy>
-<h3>Ticket Booking System</h3>
-<p>Web-based ticket booking.</p>
-<div class=project-buttons>
-<a href=https://github.com/ankitX0/Java-TicketBooking/tree/main/ticket/src/main/java/com/mycompany/ticket target=_blank rel="noopener noreferrer" class=btn>GitHub</a>
-<a href=https://ironbyte.netlify.app/javaprojects/ticketbooking/ticketbooking target=_blank rel="noopener noreferrer" class="btn btn-preview"><i class="fas fa-eye" aria-hidden=true></i> Preview</a>
-</div>
-</div>
-<div class=project-item>
-<img src=images/School_Management_System.png alt="School Management System project screenshot showing a school admin app interface" loading=lazy>
-<h3>School Management System</h3>
-<p>School admin app.</p>
-<div class=project-buttons>
-<a href=https://github.com/ankitX0/Java-SchoolManagmentSystem/tree/main/studentmanagement target=_blank rel="noopener noreferrer" class=btn>GitHub</a>
-<a href=https://ironbyte.netlify.app/javaprojects/school/school.html target=_blank rel="noopener noreferrer" class="btn btn-preview"><i class="fas fa-eye" aria-hidden=true></i> Preview</a>
-</div>
-</div>
-<div class=project-item>
-<img src="images/Library Management System.png" alt="Library Management System project screenshot showing a library resource management interface" loading=lazy>
-<h3>Library Management System</h3>
-<p>Library resource management.</p>
-<div class=project-buttons>
-<a href=https://github.com/ankitX0/java-LibraryManagmentSystem/tree/main/Library_Management_System/src/main/java target=_blank rel="noopener noreferrer" class=btn>GitHub</a>
-<a href=https://ironbyte.netlify.app/javaprojects/library/library target=_blank rel="noopener noreferrer" class="btn btn-preview"><i class="fas fa-eye" aria-hidden=true></i> Preview</a>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id=resume class=section>
-<div class=container>
-<h2 class="section-title animate-title">Resume</h2>
-<div class=resume-content>
-<div class=resume-column>
-<h3 class="resume-subtitle animate-text"><i class="fas fa-graduation-cap" aria-hidden=true></i> Education</h3>
-<div class="resume-item timeline-item">
-<div class=timeline-dot aria-hidden=true></div>
-<h4>B.Tech in CSE (AI/ML)</h4>
-<p>Parul University, Vadodara</p>
-<span class=date>2024 - Present</span>
-<p class=description>
-Specializing in <strong>AI, Machine Learning, Data Structures, and Web Development.</strong> <strong>Full-Stack Applications.</strong>
-Currently learning <strong>Computer Vision, Cloud Computing, and System Design.</strong>
-</p>
-</div>
-<div class="resume-item timeline-item">
-<div class=timeline-dot aria-hidden=true></div>
-<h4>Intermediate</h4>
-<p>Vishnu Bhagwaan Public School, Prayagraj</p>
-<span class=date>2023 - 2024</span>
-<p class=description>Excelled in <strong>Mathematics, Physics, and Computer Science.</strong>
-Developed <strong>early programming skills in JAVA and Python.</strong></p>
-</div>
-<div class="resume-item timeline-item">
-<div class=timeline-dot aria-hidden=true></div>
-<h4>Diploma in Java Programming</h4>
-<p>Online Certification (Udemy / Coursera / Local Institute)</p>
-<span class=date>2023</span>
-<p class=description>Completed a hands-on Java certification course, covering <strong>OOP, data structures, algorithms,
-and backend development.</strong> Built projects using Java frameworks.</p>
-</div>
-<div class="resume-item timeline-item">
-<div class=timeline-dot aria-hidden=true></div>
-<h4>Python Programming Certification</h4>
-<p>Baghel Computer Center</p>
-<span class=date>2022 (10th Grade)</span>
-<p class=description>Gained fundamental knowledge of <strong>Python programming, problem-solving, and
-basic automation scripts.</strong> Applied concepts in small projects.</p>
-</div>
-</div>
-<div class=resume-column>
-<h3 class="resume-subtitle animate-text"><i class="fas fa-laptop-code" aria-hidden=true></i> Projects & Experience</h3>
-<div class="resume-item timeline-item">
-<div class=timeline-dot aria-hidden=true></div>
-<h4>Personalized Notes Website</h4>
-<p>Developed for Chemistry Teacher</p>
-<span class=date>2020 - 2021</span>
-<p class=description>Built a website where my teacher could <strong>upload notes, share important updates,
-and organize content</strong> for students. Used <strong>HTML, CSS, and JavaScript</strong>
-with a simple backend.</p>
-</div>
-<div class="resume-item timeline-item">
-<div class=timeline-dot aria-hidden=true></div>
-<h4>University Hackathon Participant</h4>
-<p>AI-Based City Watch Project</p>
-<span class=date>2023</span>
-<p class=description>Developed an AI-based surveillance system for smart cities.
-Built a <strong>working prototype</strong> that used <strong>computer vision & real-time alerts.</strong></p>
-</div>
-<div class="resume-item timeline-item">
-<div class=timeline-dot aria-hidden=true></div>
-<h4>Freelance Web Developer</h4>
-<p>Portfolio Website for a Client</p>
-<span class=date>2022</span>
-<p class=description>Designed and built a professional <strong>portfolio website</strong> for a client, showcasing
-their work in a modern and interactive way. Used for hosting.</p>
-</div>
-<div class="resume-item timeline-item">
-<div class=timeline-dot aria-hidden=true></div>
-<h4>Tech Fest Organizer</h4>
-<p>Gujarat’s Largest Tech Fest (Student Body)</p>
-<span class=date>2023 - Present</span>
-<p class=description>Played a key role in organizing <strong>Gujarat’s largest student-led tech fest</strong> at
-Parul University. Managed <strong>event logistics, speaker coordination, and participant engagement.</strong></p>
-</div>
-</div>
-</div>
-<a href="https://drive.google.com/file/d/1WyX7rsfpsAdFMbP3RGXSicocTWu8Sw6l/view?usp=drive_link" class="btn download-resume animate-text" target=_blank rel="noopener noreferrer">
-<i class="fas fa-file-pdf" aria-hidden=true></i> Download My Resume
-</a>
-</div>
-</section>
-<section id=contact class=section>
-<div class=contact-content>
-<div class=contact-left>
-<h3>Get in Touch</h3>
-<form class=contact-form id=contactForm aria-label="Contact form">
-<input type=text id=name placeholder="Your Name" required aria-required=true aria-label="Your name">
-<input type=email id=email placeholder="Your Email" required aria-required=true aria-label="Your email address">
-<input type=text id=subject placeholder=Subject required aria-required=true aria-label="Subject of your message">
-<textarea id=message placeholder="Your Message" required aria-required=true aria-label="Your message"></textarea>
-<button type=button class=btn onclick=sendEmail()>Send Message</button>
-</form>
-</div>
-<div class=contact-right>
-<h3>Contact Info</h3>
-<div class=contact-item>
-<i class="fas fa-envelope" aria-hidden=true></i>
-<p>ankitsingh10a@gmail.com</p>
-</div>
-<div class=contact-item>
-<i class="fas fa-phone" aria-hidden=true></i>
-<p>+91 9574816676</p>
-</div>
-<div class=contact-item>
-<i class="fas fa-map-marker-alt" aria-hidden=true></i>
-<p>Vadodara, India</p>
-</div>
-<div class=contact-map>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14738.463922917885!2d73.15997992194363!3d22.30715818193439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc8aa7675c8df%3A0x8b9e4e0c8d3dfe86!2sVadodara%2C%20Gujarat%2C%20India!5e0!3m2!1sen!2sin!4v1649142899380!5m2!1sen!2sin" allowfullscreen loading=lazy title="Map showing Vadodara, Gujarat, India"></iframe>
-</div>
-</div>
-</div>
-</section>
-<footer>
-<p>© 2025 Ankit Singh. All rights reserved.</p>
-<div class=footer-links>
-<a href=https://github.com/ankitX0 target=_blank rel="noopener noreferrer" aria-label="Visit Ankit Singh's GitHub profile"><i class="fab fa-github"></i></a>
-<a href=https://www.linkedin.com/in/ankit_3k target=_blank rel="noopener noreferrer" aria-label="Visit Ankit Singh's LinkedIn profile"><i class="fab fa-linkedin"></i></a>
-<a href=mailto:ankitsingh10a@gmail.com aria-label="Email Ankit Singh"><i class="fas fa-envelope"></i></a>
-</div>
-</footer>
-</main>
-<div id=ankit-bot>
-<div id=chat-header>💡 Chat with AnkitBot</div>
-<div id=chat-body></div>
-<div id=chat-input-container>
-<input type=text id=chat-input placeholder="Type your message...">
-<button id=send-btn>Send</button>
-</div>
-</div>
-<button class=back-to-top aria-label="Back to top of page"><i class="fas fa-arrow-up" aria-hidden=true></i></button>
-<script src=script.js defer></script>
+
+  <!-- Cinematic Workshop Boot Sequence (Iron Man Inspired, Skippable, Session-Cached) -->
+  <div id="workshop-boot-screen" class="workshop-boot-screen" aria-hidden="true">
+    <div class="boot-reactor-container">
+      <div class="boot-reactor-ring outer"></div>
+      <div class="boot-reactor-ring inner"></div>
+      <div class="boot-reactor-core">
+        <i class="fas fa-atom"></i>
+      </div>
+    </div>
+    <div class="boot-telemetry">
+      <div class="boot-sys-label">[ SYSTEM DIAGNOSTICS: STARK WORKSHOP ONLINE ]</div>
+      <div class="boot-scan-line"></div>
+      <h2 class="boot-name">ANKIT SINGH</h2>
+      <div class="boot-role">AI/ML ENGINEER IN THE MAKING</div>
+      <div class="boot-status-pill"><span class="pulse-dot"></span> 550+ LEETCODE SOLVED // ALL SYSTEMS NOMINAL</div>
+    </div>
+    <button id="skip-boot-btn" class="skip-boot-btn" aria-label="Skip initialization sequence">
+      <span>SKIP BOOT</span> <kbd>ESC</kbd>
+    </button>
+  </div>
+
+  <!-- Mobile Hamburger Navigation Toggle -->
+  <button class="menu-toggle animated-btn" aria-label="Toggle navigation menu" tabindex="0">
+    <div></div>
+    <div></div>
+    <div></div>
+  </button>
+
+  <!-- Fixed Left Sidebar Navigation -->
+  <aside class="sidebar" role="navigation" id="sidebar-nav">
+    <div class="profile">
+      <div class="sidebar-avatar-ring">
+        <div class="sidebar-avatar-halo" aria-hidden="true"></div>
+        <img src="images/jprofile.jpeg" alt="Ankit Singh - AI/ML Engineer in the Making" loading="lazy">
+      </div>
+      <h2>Ankit Singh</h2>
+      <p class="sidebar-role-label">AI/ML & Systems Engineering • 2024–28</p>
+      <div class="social-links" id="sidebar-social-links">
+        <a href="https://github.com/AnkitX0" target="_blank" rel="noopener noreferrer" aria-label="Ankit Singh's GitHub Profile"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ankit3k/" target="_blank" rel="noopener noreferrer" aria-label="Ankit Singh's LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+        <a href="https://leetcode.com/u/ankit_3k/" target="_blank" rel="noopener noreferrer" aria-label="Ankit Singh's LeetCode Profile"><i class="fas fa-code"></i></a>
+        <a href="mailto:ankitsingh10a@gmail.com" aria-label="Email Ankit Singh"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <!-- Quick Command Palette Trigger (High-Contrast & Accessible) -->
+    <button class="cmd-palette-trigger-btn" id="cmd-palette-trigger" title="Open Command HUD (Ctrl+K)">
+      <i class="fas fa-terminal" aria-hidden="true"></i>
+      <span>COMMAND HUD</span>
+      <kbd>⌘K</kbd>
+    </button>
+
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="#hero" class="active" aria-current="page"><i class="fas fa-home" aria-hidden="true"></i> Home</a></li>
+        <li><a href="#about"><i class="fas fa-user" aria-hidden="true"></i> About Me</a></li>
+        <li><a href="#projects"><i class="fas fa-project-diagram" aria-hidden="true"></i> Featured Projects</a></li>
+        <li><a href="#skills"><i class="fas fa-microchip" aria-hidden="true"></i> Skills Matrix</a></li>
+        <li><a href="#dsa"><i class="fas fa-code" aria-hidden="true"></i> DSA & Problem Solving</a></li>
+        <li><a href="#origin-story"><i class="fas fa-atom" aria-hidden="true"></i> Origin Story</a></li>
+        <li><a href="#inspirations"><i class="fas fa-shield-halved" aria-hidden="true"></i> Inspirations</a></li>
+        <li><a href="#achievements"><i class="fas fa-trophy" aria-hidden="true"></i> Achievements</a></li>
+        <li><a href="#resume"><i class="fas fa-file-alt" aria-hidden="true"></i> Resume</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope" aria-hidden="true"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Dual-Identity Theme Switcher (Stark Mode vs. Wayne Mode) -->
+    <div class="theme-identity-switcher" role="group" aria-label="Identity Theme Switcher">
+      <button type="button" class="theme-btn active" id="theme-btn-stark" data-theme="stark" aria-pressed="true" title="Switch to Stark Mode: The Inventor">
+        <i class="fas fa-atom" aria-hidden="true"></i>
+        <span>STARK</span>
+      </button>
+      <button type="button" class="theme-btn" id="theme-btn-wayne" data-theme="wayne" aria-pressed="false" title="Switch to Wayne Mode: The Strategist">
+        <i class="fas fa-shield-halved" aria-hidden="true"></i>
+        <span>WAYNE</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Main Content Area -->
+  <main class="main-content" id="main-content">
+
+    <!-- 1. Hero Section: Compact, Cinematic, Prioritized -->
+    <section class="hero" id="hero">
+      <div class="hero-particles" id="particles-js" aria-hidden="true"></div>
+      <div class="hero-container">
+        <div class="hero-text">
+          <div class="hero-hud-telemetry">
+            <span class="hud-tag" id="hud-tag-status"><i class="fas fa-circle-dot"></i> SYSTEM ONLINE</span>
+            <span class="hud-tag"><i class="fas fa-microchip"></i> AI/ML CORE</span>
+            <span class="hud-tag" id="hud-tag-identity"><i class="fas fa-atom"></i> STARK MODE</span>
+          </div>
+          <span class="hero-badge" id="hero-role-tag">AI/ML · SOFTWARE ENGINEERING · SYSTEMS</span>
+          <h1>Hi, I'm <span>Ankit Singh</span></h1>
+          <div class="hero-tagline" id="hero-headline">"I want to build the things I once thought were impossible."</div>
+          <p class="hero-summary" id="hero-subtext">
+            I'm an AI/ML student who enjoys turning ambitious ideas into working systems, from computer vision and intelligent applications to distributed software architecture.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn"><i class="fas fa-layer-group"></i> Explore My Projects</a>
+            <a href="#about" class="btn btn-secondary"><i class="fas fa-user"></i> About Me</a>
+            <a href="https://drive.google.com/file/d/1tW_c47UiU-iOrW0963Ve9JfuWRc8z1vk/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><i class="fas fa-file-alt"></i> View Resume</a>
+          </div>
+          
+          <!-- Compact Quick Engineering Stats Bar -->
+          <div class="hero-quick-stats-strip">
+            <a href="https://leetcode.com/u/ankit_3k/" target="_blank" rel="noopener noreferrer" class="quick-stat-chip" title="Verify LeetCode Profile">
+              <i class="fas fa-code"></i>
+              <strong>550+</strong> LeetCode Problems
+            </a>
+            <a href="https://leetcode.com/u/ankit_3k/" target="_blank" rel="noopener noreferrer" class="quick-stat-chip" title="Contest Performance">
+              <i class="fas fa-chart-line"></i>
+              <strong>1470</strong> LeetCode Rating
+            </a>
+            <a href="#projects" class="quick-stat-chip" title="Explore Architecture Prototypes">
+              <i class="fas fa-network-wired"></i>
+              <strong>6+</strong> Systems Architected
+            </a>
+          </div>
+
+          <div class="hero-links">
+            <a href="https://github.com/AnkitX0" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ankit3k/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://leetcode.com/u/ankit_3k/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode"><i class="fas fa-code"></i></a>
+            <a href="mailto:ankitsingh10a@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <!-- Hero Portrait with Proportional Theme Ring -->
+        <div class="hero-image">
+          <div class="reactor-hud-wrapper">
+            <div class="reactor-ring outer-ring" aria-hidden="true"></div>
+            <div class="reactor-ring core-ring" aria-hidden="true"></div>
+            <div class="reactor-pulse-glow" aria-hidden="true"></div>
+            <img src="images/jprofile.jpeg" alt="Ankit Singh - AI/ML Engineer" loading="eager">
+          </div>
+          <div class="hero-status-pill" id="hero-status-pill">
+            <span class="status-pulse-dot"></span>
+            <span class="status-label" id="hero-status-label">ARC REACTOR ACTIVE // SYSTEM ONLINE</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. About Me: Short, Human, and Memorable with 3 Interactive Highlights -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="underline" aria-hidden="true"></div>
+        <p class="section-description">Curious enough to imagine it. Stubborn enough to build it.</p>
+
+        <div class="about-narrative" id="about-narrative-container">
+          <!-- Populated dynamically from profileData.about -->
+        </div>
+
+        <div class="about-content">
+          <div class="about-image">
+            <img src="images/jprofile.jpeg" alt="Ankit Singh - AI/ML Engineer in the Making" loading="lazy">
+          </div>
+          <div class="about-details">
+            <h3>Computer Science Undergraduate & Systems Developer</h3>
+            <p class="about-intro">Specializing in AI/ML Applications & Backend Distributed Architecture</p>
+            <div class="about-info-grid" id="about-info-grid">
+              <!-- Populated dynamically from profileData -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Featured Projects: Prominent Position for Recruiters -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header-hud">
+          <span class="hud-mono-tag">ENGINEERING PORTFOLIO // VERIFIED SYSTEMS</span>
+          <h2 class="section-title">FEATURED PROJECTS</h2>
+          <div class="underline" aria-hidden="true"></div>
+          <p class="section-description">Concrete implementations with production-grade architecture, problem statements, and open-source repositories.</p>
+        </div>
+
+        <!-- Category Filter Pills -->
+        <div class="project-filters" id="project-filters" role="tablist" aria-label="Project Categories">
+          <!-- Rendered dynamically -->
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Rendered dynamically by renderProjects() -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Skills Matrix -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Technical Skills Matrix</h2>
+        <div class="underline" aria-hidden="true"></div>
+        <p class="section-description">Structured by domain, reflecting practical implementations and demonstrated architectural knowledge.</p>
+
+        <div id="skills-container">
+          <!-- Grouped category skill cards rendered dynamically by renderSkills() -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. DSA and Problem Solving Section -->
+    <section id="dsa" class="section dsa-section">
+      <div class="container">
+        <div class="section-header-hud">
+          <span class="hud-mono-tag">ALGORITHMIC MASTERY // 550+ SOLVED</span>
+          <h2 class="section-title">DSA & COMPETITIVE PROBLEM SOLVING</h2>
+          <div class="underline" aria-hidden="true"></div>
+          <p class="section-description">Rigorous daily problem-solving, contest rating benchmarks, and foundational data structures performance.</p>
+        </div>
+
+        <div class="stats-grid" id="hero-stats-grid">
+          <!-- Rendered dynamically from profileData.stats -->
+        </div>
+
+        <div class="dsa-performance-card">
+          <div class="dsa-card-content">
+            <div class="dsa-profile-badge">
+              <i class="fas fa-code"></i>
+              <div>
+                <h4>LeetCode Contest Profile</h4>
+                <span>Handle: <strong>ankit_3k</strong> • Rating: <strong>1470</strong></span>
+              </div>
+            </div>
+            <p class="dsa-summary">
+              Solved 550+ algorithmic challenges across Dynamic Programming, Graph Traversal, Binary Search, Trees, and Heaps. Applied these exact data structures to architect HEDS row-level locking queues and media analysis pipelines.
+            </p>
+          </div>
+          <div class="dsa-card-actions">
+            <a href="https://leetcode.com/u/ankit_3k/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary-hud">
+              <i class="fas fa-arrow-up-right-from-square"></i> Verify LeetCode Profile
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Compact & Interactive Origin Story: The Journey from 2016 -->
+    <section id="origin-story" class="section origin-story-section">
+      <div class="container">
+        <div class="section-header-hud">
+          <span class="hud-mono-tag">ORIGIN LOG // 2016 TO PRESENT</span>
+          <h2 class="section-title">HOW AN INVENTOR'S WORKSHOP SPARKED CODE.</h2>
+          <div class="underline" aria-hidden="true"></div>
+          <p class="section-description">How watching an engineer build an impossible machine in 2016 sparked an obsession with computer science and building real systems from first principles.</p>
+        </div>
+
+        <div class="origin-timeline-wrapper">
+          <div class="origin-timeline-track" id="origin-timeline-track">
+            <!-- Timeline progression nodes rendered by renderOriginStory() -->
+          </div>
+          <div class="origin-scenes-container" id="origin-scenes-container">
+            <!-- 5 interactive expandable cards rendered by renderOriginStory() -->
+          </div>
+          <div class="origin-closing-statement" id="origin-closing-statement">
+            <!-- Mission box rendered by renderOriginStory() -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Inspirations: The People and Characters That Set The Standard -->
+    <section id="inspirations" class="section inspirations-section">
+      <div class="container">
+        <div class="section-header-hud">
+          <span class="hud-mono-tag">PHILOSOPHIES // HIGHEST STANDARDS</span>
+          <h2 class="section-title">THE PEOPLE AND CHARACTERS THAT SET THE STANDARD.</h2>
+          <div class="underline" aria-hidden="true"></div>
+          <p class="section-description">A curated archive of archetypes and figures combining intelligence, discipline, courage, resilience, and relentless effort to accomplish extraordinary things.</p>
+        </div>
+
+        <div class="inspirations-grid" id="inspirations-grid">
+          <!-- Rendered dynamically by renderInspirations() -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Achievements & Certifications -->
+    <section id="achievements" class="section">
+      <div class="container">
+        <h2 class="section-title">Achievements & Competitions</h2>
+        <div class="underline" aria-hidden="true"></div>
+        <p class="section-description">Hackathon finals, competitive programming events, and technical leadership records.</p>
+
+        <div class="achievements-grid" id="achievements-grid">
+          <!-- Achievement cards rendered dynamically by renderAchievements() -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+      <div class="container">
+        <h2 class="section-title">Certifications & Training</h2>
+        <div class="underline" aria-hidden="true"></div>
+        <p class="section-description">Formal training diplomas, technical certifications, and specialized workshops.</p>
+
+        <div class="certifications-grid" id="certifications-grid">
+          <!-- Flip cards rendered dynamically by renderCertifications() -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Resume Section (Updated Verified Link) -->
+    <section id="resume" class="section">
+      <div class="container">
+        <h2 class="section-title">Resume & Academic Background</h2>
+        <div class="underline" aria-hidden="true"></div>
+        <p class="section-description">Academic progression, engineering implementations, and verified credentials.</p>
+
+        <div class="resume-content" id="resume-timeline">
+          <!-- Rendered dynamically by renderResume() -->
+        </div>
+
+        <div class="resume-download-cta">
+          <a href="https://drive.google.com/file/d/1tW_c47UiU-iOrW0963Ve9JfuWRc8z1vk/view?usp=sharing" class="btn download-resume" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-file-pdf" aria-hidden="true"></i> Download Latest Resume (PDF)
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="underline" aria-hidden="true"></div>
+        <p class="section-description">Available for software engineering internships, AI/ML projects, and technical collaborations.</p>
+
+        <div class="contact-content">
+          <div class="contact-left">
+            <h3>Send a Message</h3>
+            <form class="contact-form" id="contactForm" aria-label="Contact form">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Alex Mercer" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" placeholder="name@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" placeholder="Project Collaboration / Internship Opportunity" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Hi Ankit, I reviewed your work on HEDS and would like to discuss..." required></textarea>
+              </div>
+              <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Send Message</button>
+            </form>
+          </div>
+
+          <div class="contact-right">
+            <h3>Contact Information</h3>
+            <div class="contact-item">
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+              <div>
+                <strong>Email</strong>
+                <p><a href="mailto:ankitsingh10a@gmail.com">ankitsingh10a@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-linkedin" aria-hidden="true"></i>
+              <div>
+                <strong>LinkedIn</strong>
+                <p><a href="https://www.linkedin.com/in/ankit3k/" target="_blank" rel="noopener noreferrer">linkedin.com/in/ankit3k</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-github" aria-hidden="true"></i>
+              <div>
+                <strong>GitHub</strong>
+                <p><a href="https://github.com/AnkitX0" target="_blank" rel="noopener noreferrer">github.com/AnkitX0</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+              <div>
+                <strong>Location</strong>
+                <p>Vadodara, Gujarat, India</p>
+              </div>
+            </div>
+            <div class="contact-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14738.463922917885!2d73.15997992194363!3d22.30715818193439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc8aa7675c8df%3A0x8b9e4e0c8d3dfe86!2sVadodara%2C%20Gujarat%2C%20India!5e0!3m2!1sen!2sin!4v1649142899380!5m2!1sen!2sin" allowfullscreen loading="lazy" title="Map showing Vadodara, Gujarat, India"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2026 Ankit Singh. Crafted with clean architecture & modern web design.</p>
+      <div class="footer-links">
+        <a href="https://github.com/AnkitX0" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ankit3k/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://leetcode.com/u/ankit_3k/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode"><i class="fas fa-code"></i></a>
+        <a href="mailto:ankitsingh10a@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Project Detail Modal Dialog (Accessible) -->
+  <div class="modal-overlay" id="project-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+    <div class="modal-dialog" id="project-modal">
+      <div class="modal-header">
+        <h3 id="modal-project-title">Project Details</h3>
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Close project modal">&times;</button>
+      </div>
+      <div class="modal-body" id="modal-project-body">
+        <!-- Injected dynamically by openProjectModal() -->
+      </div>
+      <div class="modal-footer" id="modal-project-footer">
+        <!-- Injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top of page"><i class="fas fa-arrow-up" aria-hidden="true"></i></button>
+
+  <!-- External Script: Particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+  <!-- Data Modules -->
+  <script src="data/profile.js"></script>
+  <script src="data/story.js"></script>
+  <script src="data/inspirations.js"></script>
+  <script src="data/projects.js"></script>
+  <script src="data/skills.js"></script>
+  <script src="data/certifications.js"></script>
+  <script src="data/achievements.js"></script>
+  <script src="data/resume.js"></script>
+
+  <!-- Rendering & Chatbot Engines -->
+  <script src="js/render.js"></script>
+  <script src="js/chatbot.js"></script>
+
+  <!-- Main Application Coordinator -->
+  <script src="js/main.js"></script>
 </body>
 </html>
-
